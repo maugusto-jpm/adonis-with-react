@@ -5,25 +5,27 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: [
-    "react-app"
-  ],
+  extends: ['react-app'],
   parserOptions: {
     project: path.resolve(__dirname, 'tsconfig.json'),
     ecmaVersion: 2020,
   },
+  settings: {
+    react: {
+      pragma: 'React',
+      version: '16.0',
+    },
+  },
   rules: {
     indent: ['error', 2],
     curly: 'off',
-    'max-len': [
-      'error', 100, 2, {
-        ignoreUrls: true,
-        ignoreComments: true,
-        ignoreRegExpLiterals: true,
-        ignoreStrings: false,
-        ignoreTemplateLiterals: false,
-      },
-    ],
+    'max-len': ['error', 100, 2, {
+      ignoreUrls: true,
+      ignoreComments: true,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: false,
+      ignoreTemplateLiterals: false,
+    }, ],
   },
   ignorePatterns: ['./node_modules'],
 };
