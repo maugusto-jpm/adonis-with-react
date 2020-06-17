@@ -1,17 +1,17 @@
 if (!!!process.env.NODE_ENV) {
   process.env.NODE_ENV = 'development'
-  process.env.BABEL_ENV = 'development';
+  process.env.BABEL_ENV = 'development'
 }
 
 process.on('unhandledRejection', err => {
-  throw err;
-});
+  throw err
+})
 
-require('react-scripts/config/env');
+require('react-scripts/config/env')
 const path = require('path')
 const fs = require('fs-extra')
-const paths = require('react-scripts/config/paths');
-const mockRequire = require('mock-require');
+const paths = require('react-scripts/config/paths')
+const mockRequire = require('mock-require')
 
 const appBuild = path.resolve(__dirname, '../public/frontend')
 const appHtml = path.resolve(__dirname, './public/index.html')
@@ -25,11 +25,11 @@ mockRequire('react-scripts/config/paths', {
   ...paths,
   appBuild,
   publicUrlOrPath,
-});
+})
 
-const configFactory = require('react-scripts/config/webpack.config');
-const config = configFactory(process.env.NODE_ENV);
-mockRequire.stopAll();
+const configFactory = require('react-scripts/config/webpack.config')
+const config = configFactory(process.env.NODE_ENV)
+mockRequire.stopAll()
 
 module.exports = {
   ...config,
@@ -57,9 +57,9 @@ module.exports = {
       apply: (compiler) => {
         compiler.hooks.afterEmit.tap('AfterEmitPlugin', () => {
           fs.moveSync(resultHtmlFile, adonisFrontendBootstrap, { overwrite: true })
-          fs.copySync(appPublic, appBuild, { dereference: true, filter: file => file !== appHtml });
+          fs.copySync(appPublic, appBuild, { dereference: true, filter: file => file !== appHtml })
         })
       }
     }
   ],
-};
+}

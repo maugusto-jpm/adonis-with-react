@@ -1,7 +1,4 @@
 {
-  "references": [
-    { "path": "./frontend" }
-  ],
   "include": [
     "**/*"
   ],
