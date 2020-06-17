@@ -1,13 +1,11 @@
-# ![adonis icon](https://user-images.githubusercontent.com/25934051/82269493-44409680-9948-11ea-864f-26443e69da41.png) AdonisJS with Vue.Js
+# ![adonis icon](https://user-images.githubusercontent.com/25934051/82269493-44409680-9948-11ea-864f-26443e69da41.png) AdonisJS with React
 
-This is an example of an web application made with [AdonisJS](https://adonisjs.com/) in Typescript with integrated frontend in [Vue.js](https://vuejs.org/).
-It is used [version 5](https://preview.adonisjs.com/) of AdonisJS and [Vue.Js in Typescript](https://vuejs.org/v2/guide/typescript.html#ad).
+This is an example of an web application made with [AdonisJS](https://adonisjs.com/) in Typescript with integrated frontend in [React](https://reactjs.org/).
+It is used [version 5](https://preview.adonisjs.com/) of AdonisJS and [React in Typescript](https://reactjs.org/docs/static-type-checking.html#typescript).
 
 Provides a [Web API](https://en.wikipedia.org/wiki/Web_API) and a [SPA](https://en.wikipedia.org/wiki/Single-page_application) with autentication.
 
 Based on [Adonis Blog Demo](https://github.com/maugusto-jpm/adonis-ts-blog)
-
-![home preview](https://user-images.githubusercontent.com/25934051/83518671-1b281600-a4b1-11ea-96fe-b3212c30c0f1.png)
 
 It is configured with:
 
@@ -15,9 +13,6 @@ It is configured with:
 - [AdonisJS Shield](https://preview.adonisjs.com/releases/shield/version-2) to protect from common web attacks
 - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) as code formatters to backend and frontend
 - [Axios](https://github.com/axios/axios) as HTTP client for browser
-- [Vue Router](https://router.vuejs.org/) for [SPA](https://en.wikipedia.org/wiki/Single-page_application) navigation
-- [Vuex](https://vuex.vuejs.org/) state management pattern
-- [Vuex Persist](https://github.com/championswimmer/vuex-persist) to local data storage
 
 ## 📝 Prerequisite
 
@@ -66,7 +61,7 @@ yarn frontend add -D <package-name>
 
 ## 🔧 Running frontend hot reload
 
-[Hot reload](https://vue-loader.vuejs.org/guide/hot-reload.html) allow that view changes can reflects to browser instantly.
+Hot reload allow that view changes can reflects to browser instantly.
 
 Run in bash:
 
