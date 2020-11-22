@@ -1,50 +1,12 @@
-# Dependencies
-/node_modules
-/frontend/node_modules
-
-# Auto generated files
-/resources/views/frontend.edge
-/public/frontend
-
-# Compiled output
-/build
-/tmp
-/.DS_STORE
-
-# SQlite files
-*.sqlite*
-
-# Logs
-logs
-*.log
+# Node.js
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
+
+# Compiled output
+/build
 
 # Git conflit files
 *.orig
 *~
-
-# Test output
-/coverage
-/.nyc_output
-/frontend/.pnp
-/frontend/**.pnp.js
-/frontend/coverage
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
